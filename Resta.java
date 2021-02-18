@@ -92,6 +92,31 @@ public class Resta {
 		return resultado;
 	}
 	
+	/**
+	 *  Método para restar tres números reales.
+	 *  
+	 *  Recibe 3 parámetros de entrada y 1 de salida que será el resultado.
+	 *  
+	 *  Casos especiales:
+	 *  Si uno de los datos es 0, el resultado sería igual a la resta de los otros dos valores.
+	 *  Si uno de los datos introducido es negativo, daría error y el resultado sería -888.
+	 *  
+	 *  @param a número real y primer parámetro de la resta.
+	 *  @param b número real y segundo parámetro de la resta.
+	 *  @param c número real y tercer parámetro de la resta.
+	 *  
+	 *  @return resultado
+	 */
+	public double restaTres() {
+		if (a > 0 && b > 0 && c > 0)
+			resultado = a - b - c;
+		else {
+			System.out.println("Error, dato introducido negativo");
+			return -888;
+		}
+		return resultado;
+	}
+	
 	
 	
 }
