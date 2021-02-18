@@ -117,6 +117,20 @@ public class Resta {
 		return resultado;
 	}
 	
-	
+	/**
+	 *  Método para restar número acumulado.
+	 *  
+	 *  Recibe 1 parámetro de entrada y acumula el valor despues de restar.
+	 *  
+	 *  Casos especiales:
+	 *  Si el dato introducido es 0, el valor no cambiaría.
+	 *  Si el dato introducido es negativo, se sumaría en vez de restarse.
+	 *  
+	 *  @param acumulado número entero, valor donde se va acumulando el resultado.
+	 *  @param num1 número entero, valor que se pasa para que le vaya restando a acumulado.
+	 */
+	public void restaAcumulado(int num1) {
+		acumulado = acumulado - num1;
+	}
 	
 }
