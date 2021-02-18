@@ -44,4 +44,28 @@ public class Resta {
 		return acumulado;
 	}
 	
+	/**
+	 *  Método para restar números reales.
+	 *  
+	 *  Recibe 2 parámetros de entrada y 1 de salida que será el resultado.
+	 *  
+	 *  Casos especiales:
+	 *  Si uno de los datos es 0, el resultado sería igual al otro valor.
+	 *  Si uno de los datos introducido es negativo, daría error y el resultado sería -888.
+	 *  
+	 *  @param a número real y primer parámetro de la resta.
+	 *  @param b número real y segundo parámetro de la resta.
+	 *  
+	 *  @return resultado
+	 */
+	public double restaReales() {
+		if (a > 0 && b > 0)
+			resultado = a - b;
+		else {
+			System.out.println("Error, dato introducido negativo");
+			return -888;
+		}
+		return resultado;
+	}
+	
 }
