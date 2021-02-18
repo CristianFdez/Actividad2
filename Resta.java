@@ -68,4 +68,30 @@ public class Resta {
 		return resultado;
 	}
 	
+	/**
+	 *  Método para restar números enteros.
+	 *  
+	 *  Recibe 2 parámetros de entrada y 1 de salida que será el resultado.
+	 *  
+	 *  Casos especiales:
+	 *  Si uno de los datos es 0, el resultado sería igual al otro valor.
+	 *  Si uno de los datos introducido es negativo, daría error y el resultado sería -888.
+	 *  
+	 *  @param d número entero y primer parámetro de la resta.
+	 *  @param e número entero y segundo parámetro de la resta.
+	 *  
+	 *  @return resultado
+	 */
+	public double restaEnteros() {
+		if (d > 0 && e > 0)
+			resultado = d - e;
+		else {
+			System.out.println("Error, dato introducido negativo");
+			return -888;
+		}
+		return resultado;
+	}
+	
+	
+	
 }
