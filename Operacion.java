@@ -4,7 +4,7 @@
  * Clase 5 - Operación 
  * 
  * @author Sorin Petrut Niculae
- * @version 1.0
+ * @version 1.1
  *
  */
 
@@ -161,6 +161,29 @@ public class Operacion {
 		return "\nLos resultados de la operacion son los siguientes:" + "\n1.El numero indicado es primo: " + obtenerPrimo() + "\n2.El i-esimo numero primo del numero indicado es: " + obtenerIesimo() + "\n3.El porcentaje de los 2 numeros indicados es: " + obtenerPorcentaje() + "\n4.El factorial del numero indicado es: " + obtenerFactorial();
 	}
 
-	
+	/**
+	 * Metodo para calcular el numero primo del numero indicado.
+	 * Recibe un parametro de entrada y devuelve otro que sera la solucion.
+	 * @return obtenerPrimo - Solucion de la operacion.
+	 */
+	public Boolean obtenerPrimo() {
+		Boolean esPrimoActual = true;
+		if (primo < 2)
+		{
+			esPrimoActual = false;
+		}
+		else
+		{
+			for (int x = 2; x * x <= primo; x++)
+			{
+				if (primo % x == 0)
+				{
+					esPrimoActual = false;
+					break;
+				}
+			}
+		}
+		return esPrimoActual;
+	}
 	
 }
