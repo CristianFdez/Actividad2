@@ -152,4 +152,15 @@ public class Cociente {
 			return -888888;
 		
 	}
+	
+	/**
+	 * Raiz cuadrada de un número
+	 * Recibe 1 parámetro de entrada y 1 de salida que será la solución
+	 * @return solucion es un double para recoger resultados que no dan un número exacto
+	 */
+	public double raiz() {
+		solucion = Math.sqrt(num1);
+		return solucion;
+	}
+
 }
