@@ -137,4 +137,19 @@ public class Cociente {
 			return -888;
 
 	}
+	
+	/**
+	 * Inverso de un número real 
+	 * Recibe 1 parámetro de entrada y 1 de salida que será la solución
+	 * El inverso de 0 no existe, asi que si el numero dado es 0 dará -888888 para marcar error
+	 * @return solucion es un double para recoger resultados que no dan un número exacto
+	 */
+	public double inverso() {
+		if (real1 != 0) {
+			solucion = 1/real1;
+			return solucion;
+		} else 
+			return -888888;
+		
+	}
 }
