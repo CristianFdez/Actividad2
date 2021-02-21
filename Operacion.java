@@ -4,7 +4,7 @@
  * Clase 5 - Operación 
  * 
  * @author Sorin Petrut Niculae
- * @version 1.1
+ * @version 1.2
  *
  */
 
@@ -184,6 +184,24 @@ public class Operacion {
 			}
 		}
 		return esPrimoActual;
+	}
+	
+	/**
+	 * Metodo para calcular i-ensimo numero primo entero.
+	 * Recibe un parametro de entrada y devuelve otro que sera la solucion.
+	 * @return obtenerIesimo - Solucion de la operacion.
+	 */
+	public int obtenerIesimo() {
+		int num = 2;
+		while (this.iEsimo != 1)
+		{
+			while (this.iEsimo % num == 0)
+			{
+				System.out.println(num);
+				this.iEsimo /= num;
+			}
+		}
+		return num;
 	}
 	
 }
