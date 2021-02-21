@@ -4,7 +4,7 @@
  * Clase 5 - Operación 
  * 
  * @author Sorin Petrut Niculae
- * @version 1.2
+ * @version 1.3
  *
  */
 
@@ -202,6 +202,15 @@ public class Operacion {
 			}
 		}
 		return num;
+	}
+	
+	/**
+	 * Metodo para calcular el porcentaje de un numero real.
+	 * Recibe 2 parametrso de entrada y devuelve otro que sera la solucion.
+	 * @return obtener porcentaje - Solucion de la operacion.
+	 */
+	public double obtenerPorcentaje() {
+		return ((porcentaje1 * 100) / porcentaje2);
 	}
 	
 }
