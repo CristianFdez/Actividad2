@@ -134,6 +134,33 @@ public class Operacion {
 		this.factorial = factorial;
 	}
 	
+	/**
+	 * Metodos responsabilidad de la clase
+	 * para trabajar los atributos de instancia
+	 * 1º metodo - Para consultar la operacion que se va a realizar
+	 * 2º metodo - Para mostrar los resultados de la operacion
+	 * 3º metodo - Para calcular el numero primo del numero indicado
+	 * 4º metodo - Para obtener el iEsimo numero primo del numero indicado
+	 * 5º metodo - Para calcular el porcentaje de los 2 numero indicados
+	 * 6º metodo - Para calcular el factorial del numero indicado
+	 */
+	
+	/**
+	 * Metodo para consultar la operacion que se va a realizar
+	 * @return consultaroperacion
+	 */
+	public String consultarOperacion() {
+		return "\nLa operacion es la siguiente:" + "\n1.Averiguar si el numero indicado es primo: " + primo + "\n2.Obtener el i-esimo de: " + iEsimo + "\n3.Obtener el porcentaje de: " + porcentaje1 + " y " + porcentaje2 + "\n4.Obtener el factorial de: " + factorial;
+	}
+	
+	/**
+	 * Metodo para mostrat los resultados de la operacion
+	 * @return resultadoOperacion
+	 */
+	public String resultadoOperacion() {
+		return "\nLos resultados de la operacion son los siguientes:" + "\n1.El numero indicado es primo: " + obtenerPrimo() + "\n2.El i-esimo numero primo del numero indicado es: " + obtenerIesimo() + "\n3.El porcentaje de los 2 numeros indicados es: " + obtenerPorcentaje() + "\n4.El factorial del numero indicado es: " + obtenerFactorial();
+	}
+
 	
 	
 }
