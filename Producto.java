@@ -22,5 +22,18 @@ public class Producto {
 	public double pro1 (double a , double b) {
 	return  a*b;
 	}
+
+	/**
+	 * Método en el que dando dos parametros (int) nos devuelve su producto. 
+	 * @param a Primer parametro para realizar la operación (debe ser un int)
+	 * @param b Segundo parametro para realizar la operación (debe ser un int)
+	 * @return  Producto de a y b
+	 */
+	
+	
+	public int pro2 (int a, int b) {
+		return a*b;	
+	}
+	
 	
 }
