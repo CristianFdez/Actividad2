@@ -104,19 +104,37 @@ public class Cociente {
 	public void setNum2(int num2) {
 		this.num2 = num2;
 	}
-	
+
 	// Métodos
 	/**
-	 * División de dos números reales 
-	 * Recibe 2 parámetros de entrada y 1 de salida que será la solución
-	 * Si el divisor es 0 devolver -888, el resultado sería infinito
+	 * División de dos números reales Recibe 2 parámetros de entrada y 1 de salida
+	 * que será la solución Si el divisor es 0 devolver -888, el resultado sería
+	 * infinito
+	 * 
 	 * @return solucion
 	 */
 	public double divisionReales() {
 		if (real2 != 0) {
-			solucion = real1/real2;
+			solucion = real1 / real2;
 			return solucion;
-		} else 
-			return -888; 
+		} else
+			return -888;
+	}
+
+	/**
+	 * División de dos números enteros Recibe 2 parámetros de entrada y 1 de salida
+	 * que será la solución Si el divisor es 0 devolver -888, el resultado sería
+	 * infinito
+	 * 
+	 * @return solucion es un double para recoger resultados que no dan un número
+	 *         exacto
+	 */
+	public double divisionEnteros() {
+		if (num2 != 0) {
+			solucion = num1 / num2;
+			return solucion;
+		} else
+			return -888;
+
 	}
 }
