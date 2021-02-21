@@ -4,7 +4,7 @@
  * Clase 5 - Operación 
  * 
  * @author Sorin Petrut Niculae
- * @version 1.3
+ * @version 1.4
  *
  */
 
@@ -211,6 +211,20 @@ public class Operacion {
 	 */
 	public double obtenerPorcentaje() {
 		return ((porcentaje1 * 100) / porcentaje2);
+	}
+	
+	/**
+	 * Metodo para obtener el factorial de un numero entero.
+	 * Rebine un parametro de entrada y devuelve otro que sera la salida.
+	 * @return obtenerFactorial - Solucion de la operacion.
+	 */
+	public double obtenerFactorial() {
+		double resultadoFactorial = 1;
+		for (int i = 2; i <= this.factorial; i++)
+		{
+			resultadoFactorial *= i;
+		}
+		return resultadoFactorial;
 	}
 	
 }
