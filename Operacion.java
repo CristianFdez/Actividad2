@@ -164,6 +164,11 @@ public class Operacion {
 	/**
 	 * Metodo para calcular el numero primo del numero indicado.
 	 * Recibe un parametro de entrada y devuelve otro que sera la solucion.
+	 * 
+	 * Casos especiales:
+	 * 1. Si el parametro de entrada es un numero negativo, entonces obtendremos un error ya que no existe numero primo de un numero negativo.
+	 * 2. Si el parametro de entrada es 0, entonces obtendremos un error ya que no existe un numero primo de 0.
+	 * 
 	 * @return obtenerPrimo - Solucion de la operacion.
 	 */
 	public Boolean obtenerPrimo() {
@@ -189,6 +194,11 @@ public class Operacion {
 	/**
 	 * Metodo para calcular i-ensimo numero primo entero.
 	 * Recibe un parametro de entrada y devuelve otro que sera la solucion.
+	 * 
+	 * Casos especiales:
+	 * 1. Si el parametro de entrada es un numero negativo, entonces obtendremos un error ya que no existe numero primo de un numero negativo.
+	 * 2. Si el parametro de entrada es 0, entonces obtendremos un error ya que no existe un numero primo de 0.
+	 * 
 	 * @return obtenerIesimo - Solucion de la operacion.
 	 */
 	public int obtenerIesimo() {
@@ -207,6 +217,14 @@ public class Operacion {
 	/**
 	 * Metodo para calcular el porcentaje de un numero real.
 	 * Recibe 2 parametrso de entrada y devuelve otro que sera la solucion.
+	 * 
+	 * Casos especiales:
+	 * 1. Si uno de los 2 parametros de entrada es un numero negativo, entonces el resultado seria un numero negativo ya que +/- o -/+ es igual a un numero negativo.
+	 * 2. Si los dos parametros de entrada son negativos, entonces el resultado seria un numero positivo ya que -/- es igual a un numero positivo.
+	 * 3. Si el primero parametro de entrada es 0, entonces el resultado seria 0 ya que 0 dividido entre cualquier numero es igual a 0.
+	 * 4. Si eñ segundo parametro de entrada es 0, entonces obtendremos un error ya que no se puede dividir ningun numero entre 0.
+	 * 5. Si los das parametros de entrada son 0, entonces el resultado seria 0.
+	 * 
 	 * @return obtener porcentaje - Solucion de la operacion.
 	 */
 	public double obtenerPorcentaje() {
@@ -215,7 +233,12 @@ public class Operacion {
 	
 	/**
 	 * Metodo para obtener el factorial de un numero entero.
-	 * Rebine un parametro de entrada y devuelve otro que sera la salida.
+	 * Recibe un parametro de entrada y devuelve otro que sera la salida.
+	 * 
+	 * Casos especiales:
+	 * 1. Si el parametros de entrada es un numero negativo, entonces obtendremos un error ya que es imposible calcular el factorial de un numero negativo.
+	 * 2. Si el parametros de entrada es 0, entonces el resultado seria 1 ya que factorial de 0 es 1.
+	 * 
 	 * @return obtenerFactorial - Solucion de la operacion.
 	 */
 	public double obtenerFactorial() {
