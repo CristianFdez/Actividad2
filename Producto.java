@@ -13,6 +13,7 @@ public class Producto {
 
 	
 	/**
+	 * 
 	 * Método en el que dando dos parametros (double) nos devuelve su producto. 
 	 * @param a Primer parametro para realizar la operación (debe ser un double)
 	 * @param b Segundo parametro para realizar la operación (debe ser un double)
