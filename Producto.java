@@ -46,7 +46,7 @@ public class Producto {
 	
 	public void pro2 (int a, int b) {
 		if (a <0 || b <0)  
-			System.out.println("Error, -8888");
+			System.out.println("Error, -888");
 		
 		else 
 			System.out.println(a*b);
@@ -66,7 +66,7 @@ public class Producto {
 
 	public void pro3( double a, double b, double c) {
 		if (a <0 || b <0 || c<0)  
-			System.out.println("Error, -8888");
+			System.out.println("Error, -888");
 		
 		else 
 			System.out.println(a*b*c);
