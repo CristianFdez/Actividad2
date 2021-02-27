@@ -4,7 +4,7 @@
 	 * Clase 2 - Resta 
 	 * @author Cristian Fernández
 	 * @version 1.0
-	 * @since 18/02/2021
+	 * @since 05/02/2021
 	 */
 
 public class Resta {
@@ -43,14 +43,15 @@ public class Resta {
 	public int getAcumulado() {
 		return acumulado;
 	}
-	
+
 	/**
 	 *  Método para restar números reales.
 	 *  
 	 *  Recibe 2 parámetros de entrada y 1 de salida que será el resultado.
 	 *  
 	 *  Casos especiales:
-	 *  Si uno de los datos es 0, el resultado sería igual al otro valor.
+	 *  Si el primer valor es un 0, el resultado será igual al segundo valor, pero en negativo.
+	 *  Si el segundo valor es un 0, el resultado será igual al primer valor.
 	 *  Si uno de los datos introducido es negativo, daría error y el resultado sería -888.
 	 *  
 	 *  @param a número real y primer parámetro de la resta.
@@ -58,8 +59,8 @@ public class Resta {
 	 *  
 	 *  @return resultado
 	 */
-	public double restaReales() {
-		if (a > 0 && b > 0)
+	public double restaReales(double a, double b) {
+		if (a >= 0 && b >= 0)
 			resultado = a - b;
 		else {
 			System.out.println("Error, dato introducido negativo");
@@ -67,14 +68,15 @@ public class Resta {
 		}
 		return resultado;
 	}
-	
+
 	/**
 	 *  Método para restar números enteros.
 	 *  
 	 *  Recibe 2 parámetros de entrada y 1 de salida que será el resultado.
 	 *  
 	 *  Casos especiales:
-	 *  Si uno de los datos es 0, el resultado sería igual al otro valor.
+	 *  Si el primer valor es un 0, el resultado será igual al segundo valor, pero en negativo.
+	 *  Si el segundo valor es un 0, el resultado será igual al primer valor.
 	 *  Si uno de los datos introducido es negativo, daría error y el resultado sería -888.
 	 *  
 	 *  @param d número entero y primer parámetro de la resta.
@@ -82,8 +84,8 @@ public class Resta {
 	 *  
 	 *  @return resultado
 	 */
-	public double restaEnteros() {
-		if (d > 0 && e > 0)
+	public double restaEnteros(int d, int e) {
+		if (d >= 0 && e >= 0)
 			resultado = d - e;
 		else {
 			System.out.println("Error, dato introducido negativo");
@@ -91,14 +93,16 @@ public class Resta {
 		}
 		return resultado;
 	}
-	
+
 	/**
 	 *  Método para restar tres números reales.
 	 *  
 	 *  Recibe 3 parámetros de entrada y 1 de salida que será el resultado.
 	 *  
 	 *  Casos especiales:
-	 *  Si uno de los datos es 0, el resultado sería igual a la resta de los otros dos valores.
+	 *  Si el primer valor es un 0, el resultado será igual a la resta de los otros dos valores.
+	 *  Si el segundo valor es un 0, el resultado será igual a la resta de los otros dos valores.
+	 *  Si el tercer valor es un 0, el resultado será igual a la resta de los otros dos valores.
 	 *  Si uno de los datos introducido es negativo, daría error y el resultado sería -888.
 	 *  
 	 *  @param a número real y primer parámetro de la resta.
@@ -107,8 +111,8 @@ public class Resta {
 	 *  
 	 *  @return resultado
 	 */
-	public double restaTres() {
-		if (a > 0 && b > 0 && c > 0)
+	public double restaTres(double a, double b, double c) {
+		if (a >= 0 && b >= 0 && c >= 0)
 			resultado = a - b - c;
 		else {
 			System.out.println("Error, dato introducido negativo");
@@ -116,7 +120,7 @@ public class Resta {
 		}
 		return resultado;
 	}
-	
+
 	/**
 	 *  Método para restar número acumulado.
 	 *  
@@ -132,5 +136,5 @@ public class Resta {
 	public void restaAcumulado(int num1) {
 		acumulado = acumulado - num1;
 	}
-	
+
 }
