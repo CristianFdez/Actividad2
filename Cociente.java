@@ -107,14 +107,17 @@ public class Cociente {
 
 	// Métodos
 	/**
-	 * División de dos números reales Recibe 2 parámetros de entrada y 1 de salida
-	 * que será la solución Si el divisor es 0 devolver -888, el resultado sería
-	 * infinito
+	 * División de dos números reales 
+	 * Recibe 2 parámetros de entrada y 1 de salida que será la solución
+	 * CASOS ESPECIALES:
+	 * Si el divisor es 0, el resultado sería infinito
+	 * Si el dividendo es 0, el resultado sería 0.
+	 * Si alguno de los valores es negativo devuelve -888
 	 * 
 	 * @return solucion
 	 */
 	public double divisionReales() {
-		if (real2 != 0) {
+		if (real1 >= 0 && real2 >= 0) {
 			solucion = real1 / real2;
 			return solucion;
 		} else
@@ -123,14 +126,17 @@ public class Cociente {
 
 	/**
 	 * División de dos números enteros Recibe 2 parámetros de entrada y 1 de salida
-	 * que será la solución Si el divisor es 0 devolver -888, el resultado sería
-	 * infinito
+	 * que será la solución. 
+	 * CASOS ESPECIALES:
+	 * Si el divisor es 0, el resultado sería infinito
+	 * Si el dividendo es 0, el resultado sería 0.
+	 * Si alguno de los valores es negativo devuelve -888
 	 * 
 	 * @return solucion es un double para recoger resultados que no dan un número
 	 *         exacto
 	 */
 	public double divisionEnteros() {
-		if (num2 != 0) {
+		if (num1 >= 0 && num2 >= 0) {
 			solucion = num1 / num2;
 			return solucion;
 		} else
@@ -141,26 +147,38 @@ public class Cociente {
 	/**
 	 * Inverso de un número real 
 	 * Recibe 1 parámetro de entrada y 1 de salida que será la solución
-	 * El inverso de 0 no existe, asi que si el numero dado es 0 dará -888888 para marcar error
+	 * CASOS ESPECIALES:
+	 * El inverso de 0 no existe, asi que si el numero dado es 0 dará -888
+	 * Si el real1 es negativo el resultado sera -888.
+	 * 
 	 * @return solucion es un double para recoger resultados que no dan un número exacto
 	 */
 	public double inverso() {
-		if (real1 != 0) {
+		if (real1 > 0) {
 			solucion = 1/real1;
 			return solucion;
 		} else 
-			return -888888;
+			return -888;
 		
 	}
 	
 	/**
 	 * Raiz cuadrada de un número
 	 * Recibe 1 parámetro de entrada y 1 de salida que será la solución
+	 * CASOS ESPECIALES:
+	 * La raiz cuadrada de cero debe dar cero
+	 * La raíz cuadrada de un numero negativo no existe y el resultado será -888.
+	 * 
 	 * @return solucion es un double para recoger resultados que no dan un número exacto
 	 */
 	public double raiz() {
-		solucion = Math.sqrt(num1);
-		return solucion;
+		if (num1 >= 0) {
+			solucion = Math.sqrt(num1);
+			return solucion;
+		} else {
+			return -888;
+		}
+		
 	}
 
 }
