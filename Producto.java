@@ -9,7 +9,7 @@
  * @version 1.0
  */
 public class Producto {
-	private double resultado;
+
 	
 	
 	/**
@@ -30,7 +30,7 @@ public class Producto {
 			return -888;
 		}else {
 			System.out.println(a*b);
-			return resultado;
+			return a*b;
 		}
 	}
 	
