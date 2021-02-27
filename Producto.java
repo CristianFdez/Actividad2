@@ -71,7 +71,7 @@ public class Producto {
 	public double pro3( double a, double b, double c) {
 		if (a <0 || b <0 || c<0) {  
 			System.out.println("Error, -888");
-			return (a*b*c);
+			return -888;
 			
 		}else { 
 			System.out.println(a*b*c);
