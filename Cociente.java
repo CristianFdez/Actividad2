@@ -136,7 +136,7 @@ public class Cociente {
 	 *         exacto
 	 */
 	public double divisionEnteros() {
-		if (num1 >= 0 && num2 >= 0) {
+		if (num1 >= 0 && num2 > 0) {
 			solucion = num1 / num2;
 			return solucion;
 		} else
