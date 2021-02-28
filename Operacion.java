@@ -4,7 +4,7 @@
  * Clase 5 - Operación 
  * 
  * @author Sorin Petrut Niculae
- * @version 1.4
+ * @version 1.5
  *
  */
 
@@ -196,7 +196,7 @@ public class Operacion {
 	 * Recibe un parametro de entrada y devuelve otro que sera la solucion.
 	 * 
 	 * Casos especiales:
-	 * 1. Si el parametro de entrada es un numero negativo, entonces obtendremos un error ya que no existe numero primo de un numero negativo.
+	 * 1. Si el parametro de entrada es un numero negativo, entonces obtendremos el error -888 ya que no existe numero primo de un numero negativo.
 	 * 2. Si el parametro de entrada es 0, entonces obtendremos un error ya que no existe un numero primo de 0.
 	 * 
 	 * @return obtenerIesimo - Solucion de la operacion.
@@ -236,7 +236,7 @@ public class Operacion {
 	 * Recibe un parametro de entrada y devuelve otro que sera la salida.
 	 * 
 	 * Casos especiales:
-	 * 1. Si el parametros de entrada es un numero negativo, entonces obtendremos un error ya que es imposible calcular el factorial de un numero negativo.
+	 * 1. Si el parametros de entrada es un numero negativo, entonces obtendremos el error -888 ya que es imposible calcular el factorial de un numero negativo.
 	 * 2. Si el parametros de entrada es 0, entonces el resultado seria 1 ya que factorial de 0 es 1.
 	 * 
 	 * @return obtenerFactorial - Solucion de la operacion.
