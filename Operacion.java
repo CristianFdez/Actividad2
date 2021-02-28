@@ -202,17 +202,10 @@ public class Operacion {
 	 * @return obtenerIesimo - Solucion de la operacion.
 	 */
 	public int obtenerIesimo() {
-		if (iEsimo > 0 ) {
-		int num = 2;
-		while (this.iEsimo != 1)
-		{
-			while (this.iEsimo % num == 0)
-			{
-				System.out.println(num);
-				this.iEsimo /= num;
-			}
-		}
-		return num;
+		int listaPrimos[] = {1,2,3,5,7,11,13,17,19,23};
+		
+		if (iEsimo > 0) {
+			return listaPrimos[iEsimo - 1];
 		} else {
 			return -888;
 		}
