@@ -216,16 +216,19 @@ public class Operacion {
 	 * Recibe 2 parametrso de entrada y devuelve otro que sera la solucion.
 	 * 
 	 * Casos especiales:
-	 * 1. Si uno de los 2 parametros de entrada es un numero negativo, entonces el resultado seria un numero negativo ya que +/- o -/+ es igual a un numero negativo.
-	 * 2. Si los dos parametros de entrada son negativos, entonces el resultado seria un numero positivo ya que -/- es igual a un numero positivo.
-	 * 3. Si el primer parametro de entrada es 0, entonces el resultado seria el error -888 ya que 0 no se puede dividir.
-	 * 4. Si el segundo parametro de entrada es 0, entonces el resultado seria 0 ya que cualquier numero multiplicado por 0 es igual a 0.
-	 * 5. Si los dos parametros de entrada son 0, entonces el resultado seria el error -888 ya que 0 no se puede dividir.
+	 * 1. Si uno de los 2 parametros de entrada es un numero negativo, entonces el resultado seria el error -888.
+	 * 2. Si el primer parametro de entrada es 0, entonces el resultado seria el error -888 ya que 0 no se puede dividir.
+	 * 3. Si el segundo parametro de entrada es 0, entonces el resultado seria 0 ya que cualquier numero multiplicado por 0 es igual a 0.
+	 * 4. Si los dos parametros de entrada son 0, entonces el resultado seria el error -888 ya que 0 no se puede dividir.
 	 * 
 	 * @return obtener porcentaje - Solucion de la operacion.
 	 */
 	public double obtenerPorcentaje() {
+		if (porcentaje1 > 0 && porcentaje2 > 0) {
 		return ((porcentaje1 / 100) * porcentaje2);
+		} else {
+			return -888;
+		}
 	}
 	
 	/**
