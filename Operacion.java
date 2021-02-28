@@ -166,8 +166,8 @@ public class Operacion {
 	 * Recibe un parametro de entrada y devuelve otro que sera la solucion.
 	 * 
 	 * Casos especiales:
-	 * 1. Si el parametro de entrada es un numero negativo, entonces obtendremos un error ya que no existe numero primo de un numero negativo.
-	 * 2. Si el parametro de entrada es 0, entonces obtendremos un error ya que no existe un numero primo de 0.
+	 * 1. Si el parametro de entrada es un numero negativo, entonces obtendremos false ya que no existe numero primo de un numero negativo.
+	 * 2. Si el parametro de entrada es 0, entonces obtendremos false ya que no existe un numero primo de 0.
 	 * 
 	 * @return obtenerPrimo - Solucion de la operacion.
 	 */
@@ -202,6 +202,7 @@ public class Operacion {
 	 * @return obtenerIesimo - Solucion de la operacion.
 	 */
 	public int obtenerIesimo() {
+		if (iEsimo > 0 ) {
 		int num = 2;
 		while (this.iEsimo != 1)
 		{
@@ -212,6 +213,9 @@ public class Operacion {
 			}
 		}
 		return num;
+		} else {
+			return -888;
+		}
 	}
 	
 	/**
@@ -223,12 +227,12 @@ public class Operacion {
 	 * 2. Si los dos parametros de entrada son negativos, entonces el resultado seria un numero positivo ya que -/- es igual a un numero positivo.
 	 * 3. Si el primero parametro de entrada es 0, entonces el resultado seria 0 ya que 0 dividido entre cualquier numero es igual a 0.
 	 * 4. Si eñ segundo parametro de entrada es 0, entonces obtendremos un error ya que no se puede dividir ningun numero entre 0.
-	 * 5. Si los das parametros de entrada son 0, entonces el resultado seria 0.
+	 * 5. Si los dos parametros de entrada son 0, entonces el resultado seria 0.
 	 * 
 	 * @return obtener porcentaje - Solucion de la operacion.
 	 */
 	public double obtenerPorcentaje() {
-		return ((porcentaje1 * 100) / porcentaje2);
+		return ((porcentaje1 / 100) * porcentaje2);
 	}
 	
 	/**
@@ -243,11 +247,15 @@ public class Operacion {
 	 */
 	public double obtenerFactorial() {
 		double resultadoFactorial = 1;
+		if (factorial >0 ) {
 		for (int i = 2; i <= this.factorial; i++)
 		{
 			resultadoFactorial *= i;
 		}
 		return resultadoFactorial;
+		} else {
+			return -888;
+		}
 	}
 	
 }
