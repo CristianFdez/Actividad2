@@ -224,7 +224,7 @@ public class Operacion {
 	 * @return obtener porcentaje - Solucion de la operacion.
 	 */
 	public double obtenerPorcentaje() {
-		if (porcentaje1 > 0 && porcentaje2 > 0) {
+		if (porcentaje1 > 0 && porcentaje2 >= 0) {
 		return ((porcentaje1 / 100) * porcentaje2);
 		} else {
 			return -888;
