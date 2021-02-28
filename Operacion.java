@@ -218,9 +218,9 @@ public class Operacion {
 	 * Casos especiales:
 	 * 1. Si uno de los 2 parametros de entrada es un numero negativo, entonces el resultado seria un numero negativo ya que +/- o -/+ es igual a un numero negativo.
 	 * 2. Si los dos parametros de entrada son negativos, entonces el resultado seria un numero positivo ya que -/- es igual a un numero positivo.
-	 * 3. Si el primero parametro de entrada es 0, entonces el resultado seria 0 ya que 0 dividido entre cualquier numero es igual a 0.
-	 * 4. Si eñ segundo parametro de entrada es 0, entonces obtendremos un error ya que no se puede dividir ningun numero entre 0.
-	 * 5. Si los dos parametros de entrada son 0, entonces el resultado seria 0.
+	 * 3. Si el primer parametro de entrada es 0, entonces el resultado seria el error -888 ya que 0 no se puede dividir.
+	 * 4. Si el segundo parametro de entrada es 0, entonces el resultado seria 0 ya que cualquier numero multiplicado por 0 es igual a 0.
+	 * 5. Si los dos parametros de entrada son 0, entonces el resultado seria el error -888 ya que 0 no se puede dividir.
 	 * 
 	 * @return obtener porcentaje - Solucion de la operacion.
 	 */
