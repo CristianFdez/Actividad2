@@ -13,7 +13,7 @@ class ProductoTest {
 		double a = 2.5;
 		double b = 2.5;
 		double esperado = 6.25;
-		double obtenido = pro.pro1(a, b);
+		double obtenido = pro.productoReales(a, b);
 		assertEquals(esperado, obtenido, "El resultado de multiplicar 2.5 por 2.5 es 6.25");
 	}
 	
@@ -22,7 +22,7 @@ class ProductoTest {
 		double a = 2.5;
 		double b = 0;
 		double esperado = 0;
-		double obtenido = pro.pro1(a, b);
+		double obtenido = pro.productoReales(a, b);
 		assertEquals(esperado, obtenido, "Un número multiplicado por 0 es 0");
 	}
 	
@@ -31,7 +31,7 @@ class ProductoTest {
 		double a = 2.5;
 		double b = -1.5;
 		double esperado = -888;
-		double obtenido = pro.pro1(a, b);
+		double obtenido = pro.productoReales(a, b);
 		assertEquals(esperado, obtenido, "Si introduces un número negativo, daría error");
 	}
 	
@@ -40,7 +40,7 @@ class ProductoTest {
 		int a = 2;
 		int b = 2;
 		double esperado = 4;
-		double obtenido = pro.pro2(a, b);
+		double obtenido = pro.productoEnteros(a, b);
 		assertEquals(esperado, obtenido, "El resultado de multiplicar 2 por 2 es 4");
 	}
 	
@@ -49,7 +49,7 @@ class ProductoTest {
 		int a = 2;
 		int b = 0;
 		int esperado = 0;
-		double obtenido = pro.pro2(a, b);
+		double obtenido = pro.productoEnteros(a, b);
 		assertEquals(esperado, obtenido, "Un número multiplicado por 0 es 0");
 	}
 	
@@ -58,7 +58,7 @@ class ProductoTest {
 		int a = 2;
 		int b = -1;
 		int esperado = -888;
-		double obtenido = pro.pro2(a, b);
+		double obtenido = pro.productoEnteros(a, b);
 		assertEquals(esperado, obtenido, "Si introduces un número negativo, daría error");
 	}
 	
@@ -68,7 +68,7 @@ class ProductoTest {
 		double b = 2.5;
 		double c = 2.6;
 		double esperado = 16.25;
-		double obtenido = pro.pro3(a, b, c);
+		double obtenido = pro.productoTresReales(a, b, c);
 		assertEquals(esperado, obtenido, "El resultado de multiplicar 2.5 po 2.5 por 2.6 es 16.25");
 	}
 	
@@ -78,7 +78,7 @@ class ProductoTest {
 		double b = 0;
 		double c = 3;
 		double esperado = 0;
-		double obtenido = pro.pro3(a, b, c);
+		double obtenido = pro.productoTresReales(a, b, c);
 		assertEquals(esperado, obtenido, "Un número multiplicado por 0 es 0");
 	}
 	
@@ -88,7 +88,7 @@ class ProductoTest {
 		double b = -1.5;
 		double c = 3.5;
 		double esperado = -888;
-		double obtenido = pro.pro3(a, b, c);
+		double obtenido = pro.productoTresReales(a, b, c);
 		assertEquals(esperado, obtenido, "Si introduces un número negativo, daría error");
 	}
 	
@@ -98,7 +98,7 @@ class ProductoTest {
 		int a = 3;
 		int b = 5;
 		double esperado = 243;
-		double obtenido = pro.prod4(a, b);
+		double obtenido = pro.potencia(a, b);
 		assertEquals(esperado, obtenido, "El resultado de 3 elevado a 5 es 243");
 	}
 	
@@ -107,7 +107,7 @@ class ProductoTest {
 		double a = 0;
 		double b = 2;
 		double esperado = 0;
-		double obtenido = pro.prod4(a, b);
+		double obtenido = pro.potencia(a, b);
 		assertEquals(esperado, obtenido, "Un valor 0 elevado a cualquier número el resultado es 0");
 	}
 	
@@ -116,7 +116,7 @@ class ProductoTest {
 		double a = 2.5;
 		double b = 0;
 		double esperado = 1;
-		double obtenido = pro.prod4(a, b);
+		double obtenido = pro.potencia(a, b);
 		assertEquals(esperado, obtenido, "Un número elevado a 0 el resultado es 1");
 	}
 	
@@ -125,7 +125,7 @@ class ProductoTest {
 		double a = -2.5;
 		double b = 2;
 		double esperado = 6.25;
-		double obtenido = pro.prod4(a, b);
+		double obtenido = pro.potencia(a, b);
 		assertEquals(esperado, obtenido, "Si introduces un número negativo, el resultado es positivo");
 	}
 	
@@ -134,7 +134,7 @@ class ProductoTest {
 		double a = 2.5;
 		double b = -2;
 		double esperado = 0.16;
-		double obtenido = pro.prod4(a, b);
+		double obtenido = pro.potencia(a, b);
 		assertEquals(esperado, obtenido, "Si introduces un número negativo, el resultado es positivo");
 	}
 	
@@ -143,7 +143,7 @@ class ProductoTest {
 		double a = 1000;
 		double b = 500;
 		double esperado = Double.POSITIVE_INFINITY;
-		double obtenido = pro.prod4(a, b);
+		double obtenido = pro.potencia(a, b);
 		assertEquals(esperado, obtenido, "Si se usan números demasiado grandes el resultado es INFINITO");
 	}
 	
