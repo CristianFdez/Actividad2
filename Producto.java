@@ -24,7 +24,7 @@ public class Producto {
 	 * 
 	 */
 	
-	public  double pro1 (double a , double b) {
+	public  double productoReales (double a , double b) {
 		if (a <0 || b <0) {  
 			System.out.println("Error, -888");
 			return -888;
@@ -46,7 +46,7 @@ public class Producto {
 	 */
 	
 	
-	public double pro2 (int a, int b) {
+	public double productoEnteros (int a, int b) {
 		if (a <0 || b <0) {  
 			System.out.println("Error, -888");
 			return -888;
@@ -68,7 +68,7 @@ public class Producto {
 	 * -En el caso de introducir un numero negativo dará como resultado -888.
 	 */
 
-	public double pro3( double a, double b, double c) {
+	public double productoTresReales( double a, double b, double c) {
 		if (a <0 || b <0 || c<0) {  
 			System.out.println("Error, -888");
 			return -888;
@@ -90,7 +90,7 @@ public class Producto {
 	 * -Cuando uno de los numeros es demasiado grande como para poder respresentarlo aparece "Infinity".
 	 * 
 	 */
-	public double prod4 (double base, double cociente) {
+	public double potencia (double base, double cociente) {
 		 return Math.pow ( base, cociente);
 		
 	}
