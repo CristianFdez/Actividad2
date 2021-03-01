@@ -10,11 +10,10 @@
 public class Resta {
 
 	/**
-	 * Declaro varios valores para hacer las operaciones de resta,
-	 * 3 valores reales y 2 enteros, y resultado como valor de la solución.
+	 * Declaro los valores resultado como valor de la solución y acumulado para acumular el valor en el método restaAcumulado.
 	 */
-	private double a, b, c, resultado;
-	private int  d, e, acumulado;
+	private double resultado;
+	private int acumulado;
 	
 	/**
 	 * Declaro el constructor sin nada, vacío.
@@ -22,24 +21,11 @@ public class Resta {
 	public Resta() {
 		super();
 	}
-
-	/**
-	 * Declaro el constructor con todos los valores.
-	 * @param a es un número real.
-	 * @param b es un número real.
-	 * @param c es un número real.
-	 * @param d es un número entero.
-	 * @param e es un número entero.
-	 */
-	public Resta(double a, double b, double c, int d, int e) {
-		super();
-		this.a = a;
-		this.b = b;
-		this.c = c;
-		this.d = d;
-		this.e = e;
-	}
 	
+	/**
+	 * Método getter para obtener el acumulado en el método restaAcumulado
+	 * @return acumulado
+	 */
 	public int getAcumulado() {
 		return acumulado;
 	}
