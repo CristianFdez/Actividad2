@@ -15,7 +15,7 @@ public class Main {
 		System.out.println(operacion.obtenerPrimo());
 
 		
-		System.out.println(pro1.pro2(12, 25));
+		System.out.println(pro1.productoEnteros(12, 25));
 		
 		System.out.println(coc.divisionEnteros());
 
